@@ -15,10 +15,10 @@ public class DataSetupMain {
 
     private static Keycloak createKeycloakClient() {
         return KeycloakBuilder.builder()
-                .serverUrl("http://localhost:11080/auth")
+                .serverUrl("http://localhost:8080/auth")
                 .realm("master")
                 .username("admin")
-                .password("password")
+                .password("pass")
                 .clientId("admin-cli")
                 .build();
     }
